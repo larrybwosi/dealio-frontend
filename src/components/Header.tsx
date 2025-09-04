@@ -50,12 +50,12 @@ const Header = () => {
             <Link to="/products" className="text-foreground hover:text-primary transition-colors font-medium">
               Products
             </Link>
-            <Link to="/catering" className="text-foreground hover:text-primary transition-colors font-medium">
-              Catering
-            </Link>
-            <Link to="/special-orders" className="text-foreground hover:text-primary transition-colors font-medium">
-              Special Orders
-            </Link>
+            {/*<Link to="/catering" className="text-foreground hover:text-primary transition-colors font-medium">*/}
+            {/*  Catering*/}
+            {/*</Link>*/}
+            {/*<Link to="/special-orders" className="text-foreground hover:text-primary transition-colors font-medium">*/}
+            {/*  Special Orders*/}
+            {/*</Link>*/}
             <a href="#about" className="text-foreground hover:text-primary transition-colors font-medium">
               About
             </a>
@@ -169,20 +169,20 @@ const Header = () => {
               >
                 Products
               </Link>
-              <Link
-                to="/catering"
-                onClick={toggleMenu}
-                className="text-foreground hover:text-primary transition-colors font-medium py-2"
-              >
-                Catering
-              </Link>
-              <Link
-                to="/special-orders"
-                onClick={toggleMenu}
-                className="text-foreground hover:text-primary transition-colors font-medium py-2"
-              >
-                Special Orders
-              </Link>
+              {/*<Link*/}
+              {/*  to="/catering"*/}
+              {/*  onClick={toggleMenu}*/}
+              {/*  className="text-foreground hover:text-primary transition-colors font-medium py-2"*/}
+              {/*>*/}
+              {/*  Catering*/}
+              {/*</Link>*/}
+              {/*<Link*/}
+              {/*  to="/special-orders"*/}
+              {/*  onClick={toggleMenu}*/}
+              {/*  className="text-foreground hover:text-primary transition-colors font-medium py-2"*/}
+              {/*>*/}
+              {/*  Special Orders*/}
+              {/*</Link>*/}
               <a
                 href="#about"
                 onClick={toggleMenu}
