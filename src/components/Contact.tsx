@@ -76,7 +76,7 @@ const Contact = () => {
                     Phone
                   </h3>
                   <p className="text-muted-foreground">
-                    (555) 123-BAKE
+                    +254 114020977
                   </p>
                 </div>
               </div>
@@ -88,7 +88,7 @@ const Contact = () => {
                     Email
                   </h3>
                   <p className="text-muted-foreground">
-                    hello@perfectpastry.com
+                    cakepanier@dealio.com
                   </p>
                 </div>
               </div>

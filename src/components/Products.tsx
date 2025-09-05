@@ -1,19 +1,19 @@
+'use client'
+
 import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
-import pastriesImage from "@/assets/pastries-display.jpg";
-import breadImage from "@/assets/bread-shelves.jpg";
+import { useRouter } from 'next/navigation';
 
 const Products = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
   
   const products = [
     {
       id: "1",
       name: "Artisan Croissants",
       description: "Buttery, flaky croissants baked fresh every morning. Available in classic, almond, and chocolate varieties.",
-      price: "From $3.50",
-      image: pastriesImage,
+      price: "From Ksh 350",
+      image: '/pastries-display.jpg',
       rating: 5,
       popular: true,
     },
@@ -21,8 +21,8 @@ const Products = () => {
       id: "2",
       name: "Sourdough Bread",
       description: "Traditional sourdough with a perfect crust and tangy flavor. Made from our 100-year-old starter.",
-      price: "$8.00",
-      image: breadImage,
+      price: "Ksh 800",
+      image: '/bread-shelves.jpg',
       rating: 5,
       popular: true,
     },
@@ -30,8 +30,8 @@ const Products = () => {
       id: "3",
       name: "Danish Pastries",
       description: "Delicate pastries filled with seasonal fruits, cream cheese, or premium chocolate.",
-      price: "From $4.25",
-      image: pastriesImage,
+      price: "From Ksh 425",
+      image: '/pastries-display.jpg',
       rating: 4.8,
       popular: false,
     },
@@ -39,8 +39,8 @@ const Products = () => {
       id: "4",
       name: "Artisan Baguettes",
       description: "Crusty French baguettes with an airy interior, perfect for sandwiches or alongside dinner.",
-      price: "$4.50",
-      image: breadImage,
+      price: "Ksh 450",
+      image: '/bread-shelves.jpg',
       rating: 4.9,
       popular: true,
     },
@@ -61,13 +61,13 @@ const Products = () => {
           </p>
         </div>
 
-        {/* Products Grid */}
+        {/* Page Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
           {products.map((product) => (
             <div 
               key={product.id} 
               className="group cursor-pointer"
-              onClick={() => navigate(`/product/${product.id}`)}
+              onClick={() => router.push(`/products/${product.id}`)}
             >
               <div className="bg-card rounded-2xl overflow-hidden shadow-soft hover-lift border border-border/50 group-hover:border-primary/30 transition-all duration-300">
                 {/* Product Image */}
@@ -128,7 +128,7 @@ const Products = () => {
                       className="opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 border-primary/20 hover:bg-primary hover:text-primary-foreground text-xs px-3"
                       onClick={(e) => {
                         e.stopPropagation();
-                        navigate(`/product/${product.id}`);
+                        router.push(`/products/${product.id}`);
                       }}
                     >
                       View
@@ -140,9 +140,9 @@ const Products = () => {
           ))}
         </div>
 
-        {/* View All Products CTA */}
+        {/* View All Page CTA */}
         <div className="text-center">
-          <Button variant="hero" size="lg" className="px-8" onClick={() => navigate('/products')}>
+          <Button variant="hero" size="lg" className="px-8" onClick={() => router.push('/products')}>
             View Full Menu
           </Button>
         </div>

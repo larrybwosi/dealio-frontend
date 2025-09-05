@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Brand & Description */}
           <div className="lg:col-span-2 space-y-4">
             <h3 className="text-2xl font-display font-bold">
-              The Perfect Pastry
+              The Cake Panier
             </h3>
             <p className="text-accent-foreground/80 leading-relaxed max-w-md">
               Crafting exceptional baked goods since 1999. From our family to yours, 
@@ -84,17 +84,17 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-accent-foreground/80 mt-0.5 flex-shrink-0" />
                 <span className="text-accent-foreground/80 text-sm">
-                  123 Baker Street<br />
-                  Springfield, ST 12345
+                  Cheptulu - Chavakali road<br />
+                  P.O.Box 388, Serem
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-accent-foreground/80 flex-shrink-0" />
-                <span className="text-accent-foreground/80 text-sm">(555) 123-BAKE</span>
+                <span className="text-accent-foreground/80 text-sm">+254 114020977</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-accent-foreground/80 flex-shrink-0" />
-                <span className="text-accent-foreground/80 text-sm">hello@perfectpastry.com</span>
+                <span className="text-accent-foreground/80 text-sm">cakepanier@dealio.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <Clock className="h-5 w-5 text-accent-foreground/80 mt-0.5 flex-shrink-0" />
@@ -111,7 +111,7 @@ const Footer = () => {
         <div className="border-t border-accent-foreground/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-accent-foreground/80 text-sm">
-              © 2024 The Perfect Pastry. All rights reserved.
+              © 2025 The Cake Pannier. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-accent-foreground/80 hover:text-accent-foreground transition-colors">

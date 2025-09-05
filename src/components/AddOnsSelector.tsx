@@ -109,7 +109,7 @@ export const AddOnsSelector = ({ productId, selectedAddOns, onAddOnsChange }: Ad
                     )}
                   </div>
                   <Badge variant="secondary" className="ml-3 shrink-0">
-                    +${addOn.price.toFixed(2)}
+                    +{addOn.price.toFixed(2)}
                   </Badge>
                 </div>
               </div>

@@ -36,7 +36,7 @@ const About = () => {
                 <span className="block text-primary">Since 1999</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                At The Perfect Pastry, we believe that great baking starts with passion, 
+                At The Cake Pannier, we believe that great baking starts with passion,
                 quality ingredients, and time-honored traditions. Our master bakers arrive 
                 before dawn to ensure every loaf, croissant, and pastry meets our exacting standards.
               </p>
