@@ -1,3 +1,4 @@
+'use client'
 import { useState } from "react";
 import { Calendar, ChefHat, Gift, Heart, Star, CheckCircle, Upload, X } from "lucide-react";
 import { Button } from "@/components/ui/button";

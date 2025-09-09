@@ -5,11 +5,15 @@ import localFont from 'next/font/local';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Dealio ERP - Invoicing, Accounting, POS',
+  title: 'Cake Panier',
   description:
     'Streamline your business with Dealio ERP: integrated invoicing, accounting, POS, warehouse, and supplier management.',
   keywords: [
     'Dealio',
+    'Pastry',
+    'Restaurant',
+    'Bakery',
+    'Cakes'
   ],
   openGraph: {
     title: 'Dealio ERP - Streamline Your Business',
@@ -24,14 +28,6 @@ export const metadata: Metadata = {
     ],
     url: 'https://dealio.vercel.app',
     type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Dealio ERP - Invoicing, Accounting, POS',
-    description: 'Streamline your business with Dealio ERP’s all-in-one solution for invoicing, accounting, and more.',
-    images: [
-      'https://cdn.sanity.io/images/7rkl59hi/production/a5412e38b9ce18b4a7ce1a9711854cd8bbf11911-1024x1024.webp?q=75&auto=format',
-    ],
   },
 };
 

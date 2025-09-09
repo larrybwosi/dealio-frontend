@@ -7,13 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "prisma generate  --no-engine",
     "dbstart": "docker-compose up -d ; docker start redis",
     "init": "docker desktop start ; docker-compose up -d ; docker start redis; next dev --turbopack",
     "start:all": "docker-compose up -d ; docker start redis; next dev --turbopack",
     "db:push": "prisma db push"
   },
   "dependencies": {
+    "@dodopayments/better-auth": "^1.1.2",
     "@hookform/resolvers": "^3.10.0",
     "@next/third-parties": "^15.5.2",
     "@radix-ui/react-accordion": "^1.2.11",

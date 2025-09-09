@@ -238,7 +238,7 @@ const Header = () => {
               </a>
               <div className="flex items-center space-x-2 text-muted-foreground pt-2">
                 <Phone className="h-4 w-4" />
-                <span className="text-sm">(555) 123-BAKE</span>
+                <span className="text-sm">(+254 11402097</span>
               </div>
 
               {user ? (

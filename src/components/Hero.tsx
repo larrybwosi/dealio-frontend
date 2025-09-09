@@ -1,7 +1,6 @@
 'use client'
 import { ChefHat, Clock, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-bakery.jpg";
 
 const Hero = () => {
   return (
@@ -9,7 +8,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src={'/hero-bakery.jpg'}
+          src={'/hero.jpg'}
           alt="Artisanal bakery with fresh pastries and warm lighting"
           className="w-full h-full object-cover"
         />

@@ -458,10 +458,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Footer$
 ;
 ;
 const metadata = {
-    title: 'Dealio ERP - Invoicing, Accounting, POS',
+    title: 'Cake Panier',
     description: 'Streamline your business with Dealio ERP: integrated invoicing, accounting, POS, warehouse, and supplier management.',
     keywords: [
-        'Dealio'
+        'Dealio',
+        'Pastry',
+        'Restaurant',
+        'Bakery',
+        'Cakes'
     ],
     openGraph: {
         title: 'Dealio ERP - Streamline Your Business',
@@ -476,14 +480,6 @@ const metadata = {
         ],
         url: 'https://dealio.vercel.app',
         type: 'website'
-    },
-    twitter: {
-        card: 'summary_large_image',
-        title: 'Dealio ERP - Invoicing, Accounting, POS',
-        description: 'Streamline your business with Dealio ERP’s all-in-one solution for invoicing, accounting, and more.',
-        images: [
-            'https://cdn.sanity.io/images/7rkl59hi/production/a5412e38b9ce18b4a7ce1a9711854cd8bbf11911-1024x1024.webp?q=75&auto=format'
-        ]
     }
 };
 function RootLayout({ children }) {
@@ -494,7 +490,7 @@ function RootLayout({ children }) {
                 gaId: "G-8VZWK7XRJX"
             }, void 0, false, {
                 fileName: "[project]/src/app/layout.tsx",
-                lineNumber: 47,
+                lineNumber: 43,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
@@ -505,19 +501,19 @@ function RootLayout({ children }) {
                     }, void 0, false),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "[project]/src/app/layout.tsx",
-                        lineNumber: 50,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/layout.tsx",
-                lineNumber: 48,
+                lineNumber: 44,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/layout.tsx",
-        lineNumber: 46,
+        lineNumber: 42,
         columnNumber: 5
     }, this);
 }

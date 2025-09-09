@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useEffect } from "react";
 import { Eye, EyeOff, Mail, Lock, User } from "lucide-react";
 import { Button } from "@/components/ui/button.tsx";
@@ -9,6 +11,7 @@ import { Separator } from "@/components/ui/separator.tsx";
 import { supabase } from "@/integrations/supabase/client.ts";
 import { useToast } from "@/hooks/use-toast.ts";
 import Header from "@/components/Header.tsx";
+import { useRouter } from 'next/navigation';
 
 const Page = () => {
   const [showPassword, setShowPassword] = useState(false);

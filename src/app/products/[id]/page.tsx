@@ -546,30 +546,28 @@ const Page = () => {
                 </div>
 
                 {/* Quick Order */}
-                <div className="bakery-card">
-                  <h3 className="text-lg font-display font-semibold text-foreground mb-4">
-                    Quick Order
-                  </h3>
-                  <p className="text-muted-foreground text-sm mb-4">
-                    Call us directly to place your order for pickup or delivery.
-                  </p>
-                  <Button
-                    variant="outline"
-                    className="w-full active:scale-[0.98] transition-transform"
-                    onClick={() => {
-                      if (navigator.vibrate) navigator.vibrate(30);
-                    }}
-                  >
-                    Call +254 114020977
-                  </Button>
-                </div>
+                {/*<div className="bakery-card">*/}
+                {/*  <h3 className="text-lg font-display font-semibold text-foreground mb-4">*/}
+                {/*    Quick Order*/}
+                {/*  </h3>*/}
+                {/*  <p className="text-muted-foreground text-sm mb-4">*/}
+                {/*    Call us directly to place your order for pickup or delivery.*/}
+                {/*  </p>*/}
+                {/*  <Button*/}
+                {/*    variant="outline"*/}
+                {/*    className="w-full active:scale-[0.98] transition-transform"*/}
+                {/*    onClick={() => {*/}
+                {/*      if (navigator.vibrate) navigator.vibrate(30);*/}
+                {/*    }}*/}
+                {/*  >*/}
+                {/*    Call +254 114020977*/}
+                {/*  </Button>*/}
+                {/*</div>*/}
               </div>
             </div>
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 };

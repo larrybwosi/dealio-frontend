@@ -37,9 +37,9 @@ const Contact = () => {
                     Location
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    123 Baker Street<br />
-                    Downtown District<br />
-                    Springfield, ST 12345
+                    Cheptulu Market<br />
+                    Cheptulu - Chavakali Road<br />
+                    P.O.Box 388, Serem
                   </p>
                 </div>
               </div>
