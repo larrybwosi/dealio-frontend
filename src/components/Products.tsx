@@ -3,6 +3,7 @@
 import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useRouter } from 'next/navigation';
+import Image from "next/image";
 
 const Products = () => {
   const router = useRouter();
@@ -78,9 +79,11 @@ const Products = () => {
                     </div>
                   )}
                   <div className="aspect-4/3 overflow-hidden">
-                    <img
+                    <Image
                       src={product.image}
                       alt={product.name}
+                      width={400}
+                      height={300}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                   </div>
