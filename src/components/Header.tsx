@@ -1,12 +1,21 @@
-'use client'
+"use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, Phone, MapPin, ShoppingCart, User, LogOut, Wheat } from "lucide-react";
+import {
+  Menu,
+  X,
+  Phone,
+  MapPin,
+  ShoppingCart,
+  User,
+  LogOut,
+  Wheat,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useCart } from "@/hooks/useCart";
 import { supabase } from "@/integrations/supabase/client";
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 const Header = () => {
@@ -20,7 +29,9 @@ const Header = () => {
 
   // Check auth status
   useEffect(() => {
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((event, session) => {
       setUser(session?.user ?? null);
     });
 
@@ -53,11 +64,11 @@ const Header = () => {
     };
 
     // Add a scroll event listener
-    window.addEventListener('scroll', controlHeader, { passive: true });
+    window.addEventListener("scroll", controlHeader, { passive: true });
 
     // Cleanup
     return () => {
-      window.removeEventListener('scroll', controlHeader);
+      window.removeEventListener("scroll", controlHeader);
     };
   }, [lastScrollY]);
 
@@ -66,7 +77,7 @@ const Header = () => {
   return (
     <header
       className={`bg-background/95 backdrop-blur-xs sticky top-0 z-50 border-b border-border shadow-soft transition-transform duration-300 ease-in-out ${
-        isVisible ? 'transform translate-y-0' : 'transform -translate-y-full'
+        isVisible ? "transform translate-y-0" : "transform -translate-y-full"
       }`}
     >
       <div className="container mx-auto px-4 py-4">
@@ -75,7 +86,7 @@ const Header = () => {
           <div className="flex items-center space-x-2">
             <Wheat className="h-8 w-8 text-primary" />
             <Link href="/">
-              <h1 className="text-2xl md:text-3xl font-display font-bold text-foreground">
+              <h1 className="text-2xl md:text-3xl font-display font-bold text-foreground whitespace-nowrap">
                 Cake Panier
               </h1>
             </Link>
@@ -83,10 +94,16 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-foreground hover:text-primary transition-colors font-medium">
+            <Link
+              href="/"
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
               Home
             </Link>
-            <Link href="/products" className="text-foreground hover:text-primary transition-colors font-medium">
+            <Link
+              href="/products"
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
               Products
             </Link>
             {/*<Link href="/catering" className="text-foreground hover:text-primary transition-colors font-medium">*/}
@@ -95,10 +112,16 @@ const Header = () => {
             {/*<Link href="/special-orders" className="text-foreground hover:text-primary transition-colors font-medium">*/}
             {/*  Special Orders*/}
             {/*</Link>*/}
-            <a href="#about" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a
+              href="#about"
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
               About
             </a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a
+              href="#contact"
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
               Contact
             </a>
           </nav>
@@ -118,7 +141,7 @@ const Header = () => {
                   size="sm"
                   onClick={async () => {
                     await supabase.auth.signOut();
-                    router.push('/');
+                    router.push("/");
                   }}
                   className="flex items-center gap-2"
                 >
@@ -185,7 +208,11 @@ const Header = () => {
               className="p-2 text-foreground hover:bg-accent rounded-lg transition-colors"
               aria-label="Toggle menu"
             >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
@@ -244,7 +271,11 @@ const Header = () => {
               {user ? (
                 <div className="flex flex-col space-y-2 pt-2">
                   <Button variant="ghost" asChild className="justify-start p-2">
-                    <Link href="/profile" onClick={toggleMenu} className="flex items-center gap-2">
+                    <Link
+                      href="/profile"
+                      onClick={toggleMenu}
+                      className="flex items-center gap-2"
+                    >
                       <User className="h-4 w-4" />
                       Profile
                     </Link>
@@ -253,7 +284,7 @@ const Header = () => {
                     variant="ghost"
                     onClick={async () => {
                       await supabase.auth.signOut();
-                      router.push('/');
+                      router.push("/");
                       toggleMenu();
                     }}
                     className="justify-start p-2 flex items-center gap-2"
@@ -264,7 +295,9 @@ const Header = () => {
                 </div>
               ) : (
                 <Button variant="outline" size="sm" asChild className="w-fit">
-                  <Link href="/auth" onClick={toggleMenu}>Sign In</Link>
+                  <Link href="/auth" onClick={toggleMenu}>
+                    Sign In
+                  </Link>
                 </Button>
               )}
             </nav>
