@@ -111,7 +111,7 @@ const Footer = () => {
         <div className="border-t border-accent-foreground/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-accent-foreground/80 text-sm">
-              © 2025 The Cake Pannier. All rights reserved.
+              © 2025 The Cake Panier. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-accent-foreground/80 hover:text-accent-foreground transition-colors">

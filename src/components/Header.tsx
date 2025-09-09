@@ -76,7 +76,7 @@ const Header = () => {
             <Wheat className="h-8 w-8 text-primary" />
             <Link href="/">
               <h1 className="text-2xl md:text-3xl font-display font-bold text-foreground">
-                Cake Pannier
+                Cake Panier
               </h1>
             </Link>
           </div>
