@@ -117,7 +117,7 @@ const Page = () => {
       
       <main className="pt-20 pb-8">
         {/* Mobile header */}
-        <div className="sticky top-16 z-40 bg-background/95 backdrop-blur-sm border-b border-border md:hidden">
+        <div className="sticky top-16 z-40 bg-background/95 backdrop-blur-xs border-b border-border md:hidden">
           <div className="container mx-auto px-4 py-3 flex items-center justify-between">
             <Button variant="ghost" size="sm" asChild className="p-2 -ml-2 touch-target">
               <Link href="/">

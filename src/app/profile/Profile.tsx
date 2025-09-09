@@ -635,7 +635,7 @@ const Profile = () => {
 
             <TabsContent value="loyalty">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Card className="bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20">
+                <Card className="bg-linear-to-br from-primary/10 to-secondary/10 border-primary/20">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                       <Gift className="h-5 w-5 text-primary" />
@@ -699,7 +699,7 @@ const Profile = () => {
 
             <TabsContent value="referrals">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <Card className="bg-gradient-to-br from-blue-50 to-purple-50 border-blue-200">
+                <Card className="bg-linear-to-br from-blue-50 to-purple-50 border-blue-200">
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                       <Share2 className="h-5 w-5 text-blue-600" />
@@ -1292,7 +1292,7 @@ const Profile = () => {
                 <DialogTitle>Pin Your Location</DialogTitle>
               </DialogHeader>
               <div className="space-y-4">
-                <div className="bg-gradient-to-br from-blue-50 to-green-50 rounded-lg p-4 border border-blue-200">
+                <div className="bg-linear-to-br from-blue-50 to-green-50 rounded-lg p-4 border border-blue-200">
                   <div className="text-center py-8">
                     <MapPin className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                     <h3 className="font-semibold text-lg mb-2">Location Picker</h3>

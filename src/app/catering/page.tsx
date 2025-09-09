@@ -104,7 +104,7 @@ const Page = () => {
       <main>
         {/* Hero Section */}
         <section className="relative py-20 lg:py-32 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary/10 to-hero/15" />
+          <div className="absolute inset-0 bg-linear-to-br from-primary/20 via-secondary/10 to-hero/15" />
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center max-w-4xl mx-auto">
               <Badge className="mb-6 bg-secondary/20 text-secondary-foreground border-secondary/30">
@@ -112,7 +112,7 @@ const Page = () => {
               </Badge>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-foreground mb-6 leading-tight">
                 Exceptional Catering for
-                <span className="block bg-gradient-to-r from-primary via-secondary to-hero bg-clip-text text-transparent">
+                <span className="block bg-linear-to-r from-primary via-secondary to-hero bg-clip-text text-transparent">
                   Every Occasion
                 </span>
               </h1>

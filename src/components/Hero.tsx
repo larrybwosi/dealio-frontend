@@ -12,7 +12,7 @@ const Hero = () => {
           alt="Artisanal bakery with fresh pastries and warm lighting"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/30"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-background/95 via-background/80 to-background/30"></div>
       </div>
 
       {/* Content */}
@@ -43,15 +43,15 @@ const Hero = () => {
 
           {/* Feature badges */}
           <div className="flex flex-wrap gap-6 text-sm">
-            <div className="flex items-center space-x-2 bg-card/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-soft">
+            <div className="flex items-center space-x-2 bg-card/80 backdrop-blur-xs rounded-full px-4 py-2 shadow-soft">
               <Clock className="h-4 w-4 text-primary" />
               <span className="text-card-foreground font-medium">Fresh Daily</span>
             </div>
-            <div className="flex items-center space-x-2 bg-card/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-soft">
+            <div className="flex items-center space-x-2 bg-card/80 backdrop-blur-xs rounded-full px-4 py-2 shadow-soft">
               <Award className="h-4 w-4 text-primary" />
               <span className="text-card-foreground font-medium">Award Winning</span>
             </div>
-            <div className="flex items-center space-x-2 bg-card/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-soft">
+            <div className="flex items-center space-x-2 bg-card/80 backdrop-blur-xs rounded-full px-4 py-2 shadow-soft">
               <ChefHat className="h-4 w-4 text-primary" />
               <span className="text-card-foreground font-medium">Artisan Crafted</span>
             </div>

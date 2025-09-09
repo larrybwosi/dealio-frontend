@@ -11,7 +11,7 @@ const NotFound = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 flex items-center justify-center px-4 py-8">
+    <div className="min-h-screen bg-linear-to-br from-amber-50 via-orange-50 to-red-50 flex items-center justify-center px-4 py-8">
       {/* Floating bakery icons */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <Croissant className="absolute top-20 left-10 text-amber-200 w-8 h-8 animate-bounce" style={{animationDelay: '0s'}} />
@@ -22,20 +22,20 @@ const NotFound = () => {
 
       <div className={`max-w-2xl mx-auto text-center transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
         {/* Main 404 Content */}
-        <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-8 sm:p-12 border border-white/20">
+        <div className="bg-white/80 backdrop-blur-xs rounded-3xl shadow-2xl p-8 sm:p-12 border border-white/20">
           {/* Chef Hat Icon */}
           <div className="mb-8">
-            <div className="inline-flex items-center justify-center w-24 h-24 sm:w-32 sm:h-32 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full shadow-lg mb-6">
+            <div className="inline-flex items-center justify-center w-24 h-24 sm:w-32 sm:h-32 bg-linear-to-br from-amber-400 to-orange-500 rounded-full shadow-lg mb-6">
               <ChefHat className="w-12 h-12 sm:w-16 sm:h-16 text-white" />
             </div>
           </div>
 
           {/* 404 Title */}
           <div className="mb-8">
-            <h1 className="text-6xl sm:text-8xl lg:text-9xl font-bold bg-gradient-to-r from-amber-600 via-orange-500 to-red-500 bg-clip-text text-transparent mb-4">
+            <h1 className="text-6xl sm:text-8xl lg:text-9xl font-bold bg-linear-to-r from-amber-600 via-orange-500 to-red-500 bg-clip-text text-transparent mb-4">
               404
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-orange-500 mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-linear-to-r from-amber-400 to-orange-500 mx-auto rounded-full"></div>
           </div>
 
           {/* Main Message */}
@@ -53,7 +53,7 @@ const NotFound = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="/"
-              className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 hover:from-amber-600 hover:to-orange-600 w-full sm:w-auto"
+              className="group inline-flex items-center justify-center px-8 py-4 bg-linear-to-r from-amber-500 to-orange-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 hover:from-amber-600 hover:to-orange-600 w-full sm:w-auto"
             >
               <Home className="w-5 h-5 mr-2 group-hover:animate-pulse" />
               Back to Home

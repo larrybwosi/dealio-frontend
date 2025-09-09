@@ -29,7 +29,7 @@ const Contact = () => {
             {/* Location */}
             <div className="bakery-card">
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
+                <div className="shrink-0">
                   <MapPin className="h-6 w-6 text-primary mt-1" />
                 </div>
                 <div>
@@ -48,10 +48,10 @@ const Contact = () => {
             {/* Hours */}
             <div className="bakery-card">
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
+                <div className="shrink-0">
                   <Clock className="h-6 w-6 text-primary mt-1" />
                 </div>
-                <div className="flex-grow">
+                <div className="grow">
                   <h3 className="text-lg font-display font-semibold text-foreground mb-4">
                     Hours of Operation
                   </h3>

@@ -132,7 +132,7 @@ const Page = () => {
       <main>
         {/* Hero Section */}
         <section className="relative py-20 lg:py-32 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-hero/20 via-primary/10 to-secondary/15" />
+          <div className="absolute inset-0 bg-linear-to-br from-hero/20 via-primary/10 to-secondary/15" />
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center max-w-4xl mx-auto">
               <Badge className="mb-6 bg-hero/20 text-hero-foreground border-hero/30">
@@ -140,7 +140,7 @@ const Page = () => {
               </Badge>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-foreground mb-6 leading-tight">
                 Bring Your
-                <span className="block bg-gradient-to-r from-hero via-primary to-secondary bg-clip-text text-transparent">
+                <span className="block bg-linear-to-r from-hero via-primary to-secondary bg-clip-text text-transparent">
                   Sweet Dreams to Life
                 </span>
               </h1>

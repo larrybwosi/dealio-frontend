@@ -82,22 +82,22 @@ const Footer = () => {
             <h4 className="text-lg font-display font-semibold">Contact Info</h4>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-accent-foreground/80 mt-0.5 flex-shrink-0" />
+                <MapPin className="h-5 w-5 text-accent-foreground/80 mt-0.5 shrink-0" />
                 <span className="text-accent-foreground/80 text-sm">
                   Cheptulu - Chavakali road<br />
                   P.O.Box 388, Serem
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-accent-foreground/80 flex-shrink-0" />
+                <Phone className="h-5 w-5 text-accent-foreground/80 shrink-0" />
                 <span className="text-accent-foreground/80 text-sm">+254 114020977</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-accent-foreground/80 flex-shrink-0" />
+                <Mail className="h-5 w-5 text-accent-foreground/80 shrink-0" />
                 <span className="text-accent-foreground/80 text-sm">cakepanier@dealio.com</span>
               </div>
               <div className="flex items-start space-x-3">
-                <Clock className="h-5 w-5 text-accent-foreground/80 mt-0.5 flex-shrink-0" />
+                <Clock className="h-5 w-5 text-accent-foreground/80 mt-0.5 shrink-0" />
                 <span className="text-accent-foreground/80 text-sm">
                   Mon-Fri: 6AM-7PM<br />
                   Sat: 6AM-8PM, Sun: 7AM-6PM

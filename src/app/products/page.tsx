@@ -211,14 +211,14 @@ const Page = () => {
               {/* View Mode Toggle */}
               <div className="flex items-center gap-2">
                 <Button
-                  variant={viewMode === "grid" ? "default" : "outline"}
+                  variant={viewMode === "grid" ? "default" : "outline-solid"}
                   size="sm"
                   onClick={() => setViewMode("grid")}
                 >
                   <Grid className="h-4 w-4" />
                 </Button>
                 <Button
-                  variant={viewMode === "list" ? "default" : "outline"}
+                  variant={viewMode === "list" ? "default" : "outline-solid"}
                   size="sm"
                   onClick={() => setViewMode("list")}
                 >
@@ -302,7 +302,7 @@ const Page = () => {
                   {/* Product Image */}
                   <div className={`relative overflow-hidden ${
                     viewMode === "list" 
-                      ? "w-48 h-32 flex-shrink-0" 
+                      ? "w-48 h-32 shrink-0" 
                       : "w-full h-48 rounded-t-lg"
                   } ${viewMode === "grid" ? "rounded-t-lg" : "rounded-l-lg"}`}>
                     {product.popular && (

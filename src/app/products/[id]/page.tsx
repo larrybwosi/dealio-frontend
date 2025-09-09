@@ -309,7 +309,7 @@ const Page = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
             {/* Product Image */}
             <div className="relative">
-              <div className="aspect-[4/3] md:aspect-square overflow-hidden rounded-2xl shadow-warm bg-muted">
+              <div className="aspect-4/3 md:aspect-square overflow-hidden rounded-2xl shadow-warm bg-muted">
                 <Image
                   src={product.image}
                   alt={product.name}
@@ -333,7 +333,7 @@ const Page = () => {
                   <h1 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground leading-tight">
                     {product.name}
                   </h1>
-                  <div className="text-right flex-shrink-0">
+                  <div className="text-right shrink-0">
                     <div className="text-xl md:text-2xl lg:text-3xl font-bold text-primary">
                       {product.price}
                     </div>
@@ -385,7 +385,7 @@ const Page = () => {
                       }}
                       className={`flex items-center justify-between p-4 rounded-xl border transition-all duration-200 cursor-pointer active:scale-[0.98] ${
                         selectedVariant?.name === variant.name
-                          ? 'border-primary bg-primary/10 shadow-sm ring-1 ring-primary/20'
+                          ? 'border-primary bg-primary/10 shadow-xs ring-1 ring-primary/20'
                           : 'border-border bg-card hover:bg-muted/50 active:bg-muted/70'
                       }`}
                     >

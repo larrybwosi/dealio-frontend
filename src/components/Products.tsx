@@ -73,18 +73,18 @@ const Products = () => {
                 {/* Product Image */}
                 <div className="relative overflow-hidden">
                   {product.popular && (
-                    <div className="absolute top-3 left-3 z-10 bg-gradient-to-r from-secondary to-hero text-white px-3 py-1.5 rounded-full text-xs font-semibold shadow-lg">
+                    <div className="absolute top-3 left-3 z-10 bg-linear-to-r from-secondary to-hero text-white px-3 py-1.5 rounded-full text-xs font-semibold shadow-lg">
                       ⭐ Popular
                     </div>
                   )}
-                  <div className="aspect-[4/3] overflow-hidden">
+                  <div className="aspect-4/3 overflow-hidden">
                     <img
                       src={product.image}
                       alt={product.name}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
 
                 {/* Product Info */}
