@@ -22,6 +22,29 @@ interface LoyaltyConfig {
 const Page = () => {
   const { items, loading, loyaltyPoints, updateQuantity, removeItem, getCartTotal, getItemCount } = useCart();
   const [loyaltyConfigs, setLoyaltyConfigs] = useState<LoyaltyConfig[]>([]);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  // Handle scroll behavior for header
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      // Show header when scrolling up or at top
+      if (currentScrollY < lastScrollY || currentScrollY < 10) {
+        setIsHeaderVisible(true);
+      } 
+      // Hide header when scrolling down (with minimum scroll threshold)
+      else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setIsHeaderVisible(false);
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
 
   useEffect(() => {
     const fetchLoyaltyConfigs = async () => {
@@ -65,7 +88,11 @@ const Page = () => {
   if (loading) {
     return (
       <div className="min-h-screen">
-        <Header />
+        <div className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
+          isHeaderVisible ? 'translate-y-0' : '-translate-y-full'
+        }`}>
+          <Header />
+        </div>
         <main className="pt-20 pb-8">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
@@ -84,7 +111,11 @@ const Page = () => {
   if (items.length === 0) {
     return (
       <div className="min-h-screen">
-        <Header />
+        <div className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
+          isHeaderVisible ? 'translate-y-0' : '-translate-y-full'
+        }`}>
+          <Header />
+        </div>
         <main className="pt-20 pb-8">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center py-12">
@@ -113,11 +144,17 @@ const Page = () => {
 
   return (
     <div className="min-h-screen">
-      <Header />
+      <div className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
+        isHeaderVisible ? 'translate-y-0' : '-translate-y-full'
+      }`}>
+        <Header />
+      </div>
       
       <main className="pt-20 pb-8">
         {/* Mobile header */}
-        <div className="sticky top-16 z-40 bg-background/95 backdrop-blur-xs border-b border-border md:hidden">
+        <div className={`sticky z-40 bg-background/95 backdrop-blur-xs border-b border-border md:hidden transition-all duration-300 ${
+          isHeaderVisible ? 'top-16' : 'top-0'
+        }`}>
           <div className="container mx-auto px-4 py-3 flex items-center justify-between">
             <Button variant="ghost" size="sm" asChild className="p-2 -ml-2 touch-target">
               <Link href="/">
@@ -251,7 +288,9 @@ const Page = () => {
 
               {/* Order Summary */}
               <div className="lg:col-span-1">
-                <div className="sticky top-32">
+                <div className={`sticky transition-all duration-300 ${
+                  isHeaderVisible ? 'top-32' : 'top-16'
+                }`}>
                   <Card>
                     <CardHeader>
                       <CardTitle className="font-display">Order Summary</CardTitle>
