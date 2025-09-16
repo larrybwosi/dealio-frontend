@@ -169,7 +169,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <GoogleAnalytics gaId="G-8VZWK7XRJX" />
+      <GoogleAnalytics gaId="G-L0MS04RB1W" />
       <body className={`antialiased font-sans bg-gray-50`}>
         <>{children}</>
         <Footer />
